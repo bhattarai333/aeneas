@@ -946,7 +946,7 @@ class TextFile(Loggable):
 
         # transform text in a soup object
         self.log(u"Creating soup")
-        soup = BeautifulSoup("\n".join(lines), "xml")
+        soup = BeautifulSoup("\n".join(lines), "lxml")
 
         # extract according to class_regex and id_regex
         text_from_id = {}
